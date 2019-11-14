@@ -17,5 +17,14 @@
 <div class="seconds">{{timer.seconds}}</div>
 <app-CountdownTimer #timer></app-CountdownTimer>
 
+<!-- 父组件调用@ViewChild() -->
+<button (click)="start()">Start</button>
+<button (click)="stop()">Stop</button>
+<div class="seconds">{{seconds()}}</div>
+<app-CountdownTimer></app-CountdownTimer>
+
+
+<input type="text" [(ngModel)]="currentText.content">
+{{currentText.content}}
 
 <router-outlet></router-outlet>
