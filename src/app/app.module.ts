@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { VoterComponent } from './voter/voter.component';
 import { CountdownTimerComponent } from './CountdownTimer/CountdownTimer.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
    declarations: [
       AppComponent,
       HeroesComponent,
       VoterComponent,
-      CountdownTimerComponent
+      CountdownTimerComponent,
+      HighlightDirective
    ],
    imports: [
       BrowserModule,

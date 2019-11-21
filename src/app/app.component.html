@@ -25,6 +25,10 @@
 
 
 <input type="text" [(ngModel)]="currentText.content">
-{{currentText.content}}
+{{currentText.content | uppercase}}
+<div>{{currentText | json}}</div>
+
+<!-- 自定义指令，color为动态传入的颜色参数 -->
+<p [appHighlight]='color'>highlight</p>
 
 <router-outlet></router-outlet>

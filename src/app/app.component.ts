@@ -40,6 +40,8 @@ export class AppComponent implements AfterViewInit {
     content: "mmm"
   }
 
+  color = '#f66';
+
   onVoted(agreed: boolean) {
     agreed ? this.agreed++ : this.disagreed++
   }
