@@ -8,6 +8,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { VoterComponent } from './voter/voter.component';
 import { CountdownTimerComponent } from './CountdownTimer/CountdownTimer.component';
 import { HighlightDirective } from './highlight.directive';
+import { PipeCompComponent } from './pipe-comp/pipe-comp.component';
 
 @NgModule({
    declarations: [
@@ -15,7 +16,8 @@ import { HighlightDirective } from './highlight.directive';
       HeroesComponent,
       VoterComponent,
       CountdownTimerComponent,
-      HighlightDirective
+      HighlightDirective,
+      PipeCompComponent
    ],
    imports: [
       BrowserModule,
